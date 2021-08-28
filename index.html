@@ -1,0 +1,57 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Front End Developer Clicker</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Front End Developer Clicker</h1>
+    </header>
+    <main>
+      <div class="left-col">
+        <h3 id="click-power">Click power: 1</h3>
+        <h3 id="points-per-second">Points per second: 0</h3>
+        <h2 id="score">Score: 0</h2>
+        <div class="clicker" id="clicker">
+          <img src="img/clicker.png" draggable="false" />
+        </div>
+      </div>
+      <div class="right-col">
+        <button id=option-1>
+          Make a project <span>Click power x2</span>
+          <p>Cost: 10</p>
+        </button>
+        <button id=option-2>
+          Learn HTML <span>+1 points/sec</span>
+          <p>Cost: 100</p>
+        </button>
+        <button id=option-3>
+          Learn CSS <span>+10 points/sec</span>
+          <p>Cost: 1000</p>
+        </button>
+        <button id=option-4>
+          Learn JavaScript <span>+100 points/sec</span>
+          <p>Cost: 10000</p>
+        </button>
+        <button id=option-5>
+          Learn a library <span>+1000 points/sec</span>
+          <p>Cost: 100000</p>
+        </button>
+        <button id=option-6>
+          Learn a framework <span>+10000 points/sec</span>
+          <p>Cost: 1000000</p>
+        </button>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
