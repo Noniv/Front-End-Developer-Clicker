@@ -63,7 +63,7 @@ setInterval(function () {
     "FEClickerVars",
     JSON.stringify({ score, pointsPerSecond, clickMultiplier })
   );
-}, 1000);
+}, 60000);
 
 function loadGame() {
   const localStorageOptions = JSON.parse(
