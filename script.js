@@ -59,16 +59,11 @@ setInterval(function () {
 
 setInterval(function () {
   localStorage.setItem("FEClickerOptions", JSON.stringify(options));
-  localStorage.setItem(
-    "FEClickerVars",
-    JSON.stringify({ score, pointsPerSecond, clickMultiplier })
-  );
+  localStorage.setItem("FEClickerVars", JSON.stringify({ score, pointsPerSecond, clickMultiplier }));
 }, 60000);
 
 function loadGame() {
-  const localStorageOptions = JSON.parse(
-    localStorage.getItem("FEClickerOptions")
-  );
+  const localStorageOptions = JSON.parse(localStorage.getItem("FEClickerOptions"));
   const localStorageVars = JSON.parse(localStorage.getItem("FEClickerVars"));
 
   if (localStorageOptions && localStorageVars) {
