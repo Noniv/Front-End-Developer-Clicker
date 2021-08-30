@@ -1,121 +1,138 @@
-*{
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-    color: white;
+* {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  color: white;
 }
 
 :root {
-    color-scheme: dark;
+  color-scheme: dark;
 }
 
 body {
-    background-color: rgb(18, 18, 18);
+  background-color: rgb(18, 18, 18);
 }
 
 header {
-    text-align: center;
-    margin-top: 30px;
-    margin-bottom: 40px;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 40px;
 }
 
 h1 {
-    font-size: 50px;
+  font-size: 50px;
 }
 
 h2 {
-    font-size: 40px;
+  font-size: 40px;
 }
 
 h3 {
-    font-size: 25px;
+  font-size: 25px;
 }
 
 main {
-    display: flex;
-    width: 90%;
-    margin: auto
+  display: flex;
+  width: 90%;
+  margin: auto;
 }
 
 .left-col {
-    flex-basis: 40%;
-    text-align: center;
+  flex-basis: 40%;
+  text-align: center;
 }
 
 .right-col {
-    flex-basis: 60%;
+  flex-basis: 60%;
 }
 
 .clicker {
-    background-color: rgb(104, 104, 104);
-    width: 310px;
-    height: 310px;
-    margin: 50px auto;
-    border-radius: 50%;
-    display: grid;
-    place-items: center;
-    cursor: pointer;
-    border: 3px solid white;
-    transition: width 0.1s, height 0.1s, transform 0.1s, border 0.1s;
+  background-color: rgb(104, 104, 104);
+  width: 310px;
+  height: 310px;
+  margin: 50px auto;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  border: 3px solid white;
+  transition: width 0.1s, height 0.1s, transform 0.1s, border 0.1s;
 }
 
 .clicker img {
-    transition: 0.1s;
-    width: 240px;
+  transition: 0.1s;
+  width: 240px;
 }
 
 .clicker:active {
-    width: 300px;
-    height: 300px;
-    transform: translateY(5px);
+  width: 300px;
+  height: 300px;
+  transform: translateY(5px);
 }
 
 .clicker:active img {
-    width: 285px;
+  width: 285px;
 }
 
-img::selection 
-{
-    background-color:transparent;
-} 
+img::selection {
+  background-color: transparent;
+}
 
 button {
-    display: block;
-    width: 80%;
-    margin: 40px auto;
-    height: 60px;
-    background-color: rgb(44, 13, 13);
-    border: 2px solid gainsboro;
-    cursor: pointer;
-    position: relative;
-    text-align: left;
-    padding: 0 20px;
-    box-sizing: border-box;
+  display: block;
+  width: 80%;
+  margin: 40px auto;
+  height: 60px;
+  background-color: rgb(44, 13, 13);
+  border: 2px solid gainsboro;
+  cursor: pointer;
+  position: relative;
+  text-align: left;
+  padding: 0 20px;
+  box-sizing: border-box;
 }
 
 button:first-child {
-    margin-bottom: 80px;
+  margin-bottom: 80px;
 }
 
 button:hover {
-    border: 3px solid white;
-    padding: 0 19px
+  border: 3px solid white;
+  padding: 0 19px;
 }
 
 button:active {
-    left: -2px;
-    top: -2px;
+  left: -2px;
+  top: -2px;
 }
 
 button.available {
-    background-color: rgb(13, 44, 13);
+  background-color: rgb(13, 44, 13);
 }
 
 span {
-    padding: 10px 0;
-    float: right;
+  padding: 10px 0;
+  float: right;
 }
 
 p {
-    margin: 0;
-    font-size: 15px;
+  margin: 0;
+  font-size: 15px;
+}
+
+@media screen and (max-width: 900px) {
+  main {
+    flex-direction: column;
+  }
+
+  button {
+    font-size: 3vw;
+  }
+
+  button p {
+    font-size: 2vw;
+  }
+
+  button span {
+    font-size: 3vw;
+  }
 }
